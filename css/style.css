@@ -1,0 +1,283 @@
+/* css reset */
+* {
+    margin: o;
+    padding: 0;
+
+}
+
+/* css variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: -9px -9px;
+
+}
+
+/* navigation bar:logo and images */
+#logo {
+    margin: 1px 1px;
+
+
+}
+
+#logo img {
+    height: 100px;
+    margin: 16px 16px;
+
+}
+
+/* navigation bar : list styling */
+#navbar ul {
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: rgb(46, 5, 5);
+    display: block;
+    padding: 5px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#navbar ul li a:hover {
+    color: rgb(15, 13, 13);
+    background-color: white;
+
+}
+
+
+/* home section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: oPX 44PX;
+    height: 290px;
+    top: 0px;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('../images/bg3.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.80;
+
+}
+
+#home h1 {
+    color: #050404f1;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    font-size: 2.4rem
+}
+
+#home p {
+    color: rgb(36, 34, 34);
+    text-align: center;
+    font-size: 1rem;
+    padding: 1px;
+    font-family: 'Acme', sans-serif;
+}
+
+/* services section */
+#services {
+    display: flex;
+    margin: 12px;
+    width: -1px;
+    height: 291px;
+}
+
+.services {
+    padding: 29px;
+}
+
+#services .box {
+    border: 2px solid red;
+    border-radius: 30px;
+    padding: 2px 15px;
+    margin: 1px 12px;
+    background-color: #faf6f0;
+
+}
+
+#services .box img {
+    height: 130px;
+    /* padding: 5px 162px; */
+    /* justify-content: end; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+#services .box p {
+    /* font-family: 'Acme', sans-serif; */
+
+}
+
+/* clients section */
+#client-section {
+    height: 200px;
+
+}
+
+#client-section::before {
+    content: "";
+    background: url(../images/contact.jpg);
+    position: absolute;
+    height: 35%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#clients-section {
+    padding: 12px;
+}
+
+#clients img {
+    height: 90px;
+}
+
+.client-item {
+    padding: 32px;
+}
+
+
+
+/* utility classes */
+.h-primary {
+    font-size: 1.8rem;
+    /* padding: 1px; */
+    margin: 10px;
+    font-family: 'Acme', sans-serif;
+
+}
+
+
+
+.h-secondary {
+    font-size: 1.5rem;
+    /* padding: 1px; */
+    margin: 5px;
+    font-family: 'Acme', sans-serif;
+
+}
+
+.btn {
+    padding: 5px 33px;
+    border: 2px solid white;
+    background-color: rgb(69, 65, 65);
+    color: white;
+    border-radius: 10px;
+    margin: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+    /* font-size: 2rem; */
+}
+
+.services .h-primary {
+    font-size: 2.5rem;
+}
+
+#client-section .h-primary {
+    font-size: 2.5rem;
+    margin: -12px;
+
+}
+
+#contact .h-primary {
+
+    font-size: 2.5rem;
+    margin: 20px;
+
+}
+
+/* contact section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    background: url(../images/contact1.jpg)no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+ #contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+ } 
+
+#contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Acme', sans-serif;
+}
+
+footer{
+    background: black;
+    color: #faf6f0;
+    padding: 9px 20px;
+}
